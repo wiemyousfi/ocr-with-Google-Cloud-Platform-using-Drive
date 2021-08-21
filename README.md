@@ -1,2 +1,2 @@
 # ocr_drive
-optimal ocr solution using google drive.
+optimal ocr solution in one easy codeusing google drive.
