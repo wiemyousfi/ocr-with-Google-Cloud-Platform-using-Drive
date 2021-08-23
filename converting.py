@@ -36,8 +36,7 @@ drive = GoogleDrive(gauth)
 
 #Note that CreateFile() will create GoogleDriveFile instance but not actually upload a file to Google Drive.
 
-file = drive.CreateFile({'title': 'conv.docx', 
-                         'mimeType': 'application/msword'})
+file = drive.CreateFile({'title': 'conv.docx'})
 
 # Read file and set it as a content of this instance.
 file.SetContentFile('lk.jpg')
@@ -52,7 +51,6 @@ file_id=file['id']
 
 
 download_file = drive.CreateFile({'id': file_id})
-download_file.GetContentFile('converted.docx', mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document') 
 
 
 
